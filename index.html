@@ -2,30 +2,32 @@
 <html>
 <head>
     <title>Calculadora de Colisões Elásticas</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css"><!--O elemento <link> é usado para vincular uma folha de estilo externa à página. Ele especifica o arquivo "style.css" como a folha de estilo a ser usada para formatar a página.--->
 </head>
 <body>
-    <h1>Calculadora de Colisões Elásticas</h1>
-    <form id="collision-form">
-        <label for="mass1">Massa do Corpo 1 (em kg):</label>
-        <input type="number" id="mass1" required><br>
+    <h1>Calculadora de Colisões Elásticas</h1><!-- A tag <h1> é um cabeçalho de nível 1 e é usada para criar um título principal na página. Neste caso, o título principal é "Calculadora de Colisões Elásticas".        ---->
+    <form id="collision-form"><!--A tag <form> define um formulário que envolve elementos de entrada (campos de entrada), rótulos e um botão de envio. É identificado pelo atributo id="collision-form".--->
+        <label for="mass1">Massa do Corpo 1 (em kg):</label><!--A tag <label> é usada para rotular elementos de entrada dentro do formulário. Cada <label> está associado a um campo de entrada por meio do atributo for.--->
+        <input type="number" id="mass1" required><br><!--A tag <input> define campos de entrada onde os usuários podem inserir dados. Eles têm atributos como type para especificar o tipo de entrada, id para identificação e required para tornar a entrada obrigatória.----->
         
-        <label for="velocity1">Velocidade do Corpo 1 (em m/s):</label>
+        <label for="velocity1">Velocidade do Corpo 1 (em m/s):</label><!--Esse é um exemplo de um rótulo HTML usado para descrever um campo de entrada de dados relacionado à velocidade do Corpo 2 em metros por segundo (m/s). O atributo "for" especifica qual campo de entrada está associado a esse rótulo.-->
         <input type="number" id="velocity1" required><br>
         
-        <label for="mass2">Massa do Corpo 2 (em kg):</label>
+        <label for="mass2">Massa do Corpo 2 (em kg):</label><!--Esse é outro exemplo de um rótulo HTML usado para descrever um campo de entrada de dados relacionado à massa do Corpo 2 em quilogramas (kg). O atributo "for" especifica qual campo de entrada está associado a esse rótulo.-->
         <input type="number" id="mass2" required><br>
         
-        <label for="velocity2">Velocidade do Corpo 2 (em m/s):</label>
+        <label for="velocity2">Velocidade do Corpo 2 (em m/s):</label><!--Esse é um exemplo de um rótulo HTML usado para descrever um campo de entrada de dados relacionado à velocidade do Corpo 2 em metros por segundo (m/s). O atributo "for" especifica qual campo de entrada está associado a esse rótulo.-->
         <input type="number" id="velocity2" required><br>
         
-        <button type="button" onclick="calculateCollision()">Calcular</button>
+        <button type="button" onclick="calculateCollision()">Calcular</button><!--A tag <button> cria um botão. Neste caso, o botão tem o texto "Calcular" e está associado a uma função JavaScript chamada "calculateCollision()" que será chamada quando o botão for clicado.-->
     </form>
     
     <h2>Resultado:</h2>
     <p id="result"></p>
 
-    <script src="script.js"></script>
+    <script src="script.js"></script><!--A tag <script> é usada para incluir scripts JavaScript na página. Neste caso, o arquivo "script.js" contém o código JavaScript necessário para realizar os cálculos e atualizar o resultado na página-->
 </body>
 </html>
+
+
 
